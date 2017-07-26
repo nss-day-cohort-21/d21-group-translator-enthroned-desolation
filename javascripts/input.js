@@ -10,39 +10,31 @@ translateBttn.addEventListener("click", function(){
 			break;
 		}
 	}
-	console.log("whichselected", whichselected);	
 
-	// let inputPhrase = document.getElementById("inputPhrase").value;
+	// let inputPhrase = "Merry Christmas and Happy New Year";
 
-	let inputPhrase = "Merry Christmas";
+	let inputPhrase = document.getElementById("inputPhrase").value.toLowerCase();
 
 	console.log("inputPhrase", inputPhrase);
 
-	messageConverter();
+	// inputPhrase = inputPhrase.toLowerCase();
+
+	console.log("whichselected", whichselected);	
+
+	console.log("inputPhrase.toLowerCase", inputPhrase);
+
+	console.log("messageConverter", messageConverter);
+
+	
+
+	if (whichselected === "french") {
+		var theMessage = messageConverter.translateToFrench(inputPhrase);
+		console.log("theMessage", theMessage);
+		document.getElementById("translatorOutput").innerHTML = `${theMessage}`;
+	} else if (whichselected === "german") {
+		console.log("The selection was German");
+	} else if (whichselected === "morseCode") {
+		console.log("The selection was Morse Code");
+	}
+
 });
-
-
-
-
-
-// let addPlayer = document.getElementById("btn-signup");
-// addPlayer.addEventListener("click", () => {
-// 	let newPlayerName = document.getElementById("newperson").value;
-// 	let whichselected;
-// 	var radios = document.getElementsByName("whichside");
-// 	for (let i = 0; i < radios.length; i++){
-// 		//1 = good, 2 = evil, 0 = jedi
-// 		if (radios[i].checked){
-// 			whichselected = radios[i].value;
-// 			break;
-// 		}
-// 	}
-// 	console.log("whichselected", whichselected);
-
-// 	if (whichselected == 0){
-// 		Starwars.addJedi(newPlayerName);
-// 	}else if (whichselected == 1){
-// 		Starwars.addKeyPlayer(newPlayerName);
-// 	}else if(whichselected == 2){
-// 		Starwars.addEvil(newPlayerName);
-// 	}
