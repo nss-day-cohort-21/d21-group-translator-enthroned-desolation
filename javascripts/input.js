@@ -14,7 +14,7 @@ translateBttn.addEventListener("click", function(){
 
 	// let inputPhrase = document.getElementById("inputPhrase").value;
 
-	let inputPhrase = "Merry Christmas";
+	// let inputPhrase = "Merry Christmas";
 
 	console.log("inputPhrase", inputPhrase);
 
