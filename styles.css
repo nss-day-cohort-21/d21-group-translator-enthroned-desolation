@@ -3,12 +3,30 @@
 }
 
 #header {
+	display: flex;
 	border: 5px solid red;
 	border-radius: 10px;
 	text-align: center;
 	background-color: green;
 	color: white;
 	margin-bottom: 2%;
+}
+
+#header h2 {
+	margin-left: 0;
+	margin-right: 0;
+}
+
+#santa1 {
+	max-height: 80px;
+	margin: auto 10px auto 20px;
+	padding: 0;
+}
+
+#santa2 {
+	max-height: 80px;
+	margin: auto 20px auto 10px;
+	padding: 0;
 }
 
 #flexcontainer {
