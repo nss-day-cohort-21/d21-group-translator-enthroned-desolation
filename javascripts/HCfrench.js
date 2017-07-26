@@ -32,7 +32,10 @@ var messageConverter = (function(originalMessageConverter){
 			splitFrench.push(frenchWords[word]);
 		});
 
+		outputSentence = splitFrench.join(" ");
+
 		var outputSentence = splitFrench.join(" ");
+
 
 		return outputSentence;
 
@@ -41,4 +44,7 @@ var messageConverter = (function(originalMessageConverter){
 	return originalMessageConverter;
 
 })(messageConverter);
+
+
+
 

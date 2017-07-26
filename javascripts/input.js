@@ -27,6 +27,7 @@ translateBttn.addEventListener("click", function(){
 // ********** SEND TEXT TO TRANSLATOR BASED ON LANGUAGE, RETURN TRANSLATION, AND OUTPUT VOICE ********* //
 
 	if (whichselected === "french") {
+
 		var theMessage = messageConverter.translateToFrench(inputPhrase);
 		document.getElementById("translatorOutput").innerHTML = `${theMessage}`;
 
@@ -36,6 +37,7 @@ translateBttn.addEventListener("click", function(){
 		speechSynthesis.speak(msg);
 
 	} else if (whichselected === "german") {
+
 		var theMessage = messageConverter.translateToGerman(inputPhrase);
 		document.getElementById("translatorOutput").innerHTML = `${theMessage}`
 
@@ -61,3 +63,19 @@ translateBttn.addEventListener("click", function(){
     }
 
 });
+
+
+
+// var msg = new SpeechSynthesisUtterance();
+// var voices = window.speechSynthesis.getVoices();
+// msg.voice = voices[10]; // Note: some voices don't support altering params
+// msg.voiceURI = 'native';
+// msg.volume = 1; // 0 to 1
+// msg.rate = 1; // 0.1 to 10
+// msg.pitch = 2; //0 to 2
+// msg.text = theMessage;
+// msg.lang = 'en-US';
+
+// msg.onend = function(e) {
+//   console.log('Finished in ' + event.elapsedTime + ' seconds.');
+// };
