@@ -2,7 +2,7 @@ console.log("JBmorse.js");
 
 // let inputPhrase = "pink";
 
-var messageConverter = (function(taco) {
+var messageConverter = (function(originalMessageConverter) {
 
 debugger;
 
@@ -36,7 +36,7 @@ debugger;
 
     console.log("It just called the function on the morse page");
     
-	taco.translateToMorse = function(phrase) {
+	originalMessageConverter.translateToMorse = function(phrase) {
 
     //First, you have to slice the object.
     //Second, slice the words in order to separate all of the letters. 
@@ -45,6 +45,7 @@ debugger;
     //Fifth jam words back together as well.
 
         console.log("we are slicing the phrase into words");
+
         console.log("Input running here", phrase);
         
         var splitInput = phrase.split("");
@@ -72,11 +73,11 @@ debugger;
         
 
 	console.log("we're going to translate to Morse");
-    return taco;
+    return originalMessageConverter;
         
 
 
-})(messageConverter || {});
+})(messageConverter);
 
 messageConverter.translateToMorse(inputPhrase);
 
