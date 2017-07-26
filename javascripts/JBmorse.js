@@ -4,8 +4,6 @@ console.log("JBmorse.js");
 
 var messageConverter = (function(originalMessageConverter) {
 
-debugger;
-
 	let alphabet = {
         "a": ".-",
         "b": "-...",
