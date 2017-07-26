@@ -31,14 +31,34 @@ translateBttn.addEventListener("click", function(){
 		var theMessage = messageConverter.translateToFrench(inputPhrase);
 		console.log("French - theMessage", theMessage);
 		document.getElementById("translatorOutput").innerHTML = `${theMessage}`;
+
+		var msg = new SpeechSynthesisUtterance();
+		msg.text = theMessage;
+		msg.lang = 'fr';
+		speechSynthesis.speak(msg);
+
+
 	} else if (whichselected === "german") {
 		var theMessage = messageConverter.translateToGerman(inputPhrase);
 		console.log("German - theMessage", theMessage);
-		document.getElementById("translatorOutput").innerHTML = `${theMessage}`;
+		document.getElementById("translatorOutput").innerHTML = `${theMessage}`
+
+		var msg = new SpeechSynthesisUtterance();
+		msg.text = theMessage;
+		msg.lang = 'de';
+		speechSynthesis.speak(msg);
+
+
 	} else if (whichselected === "morseCode") {
 		var theMessage = messageConverter.translateToMorse(inputPhrase);
 		console.log("Morse - theMessage", theMessage);
 		document.getElementById("translatorOutput").innerHTML = `${theMessage}`;
+
+
+		// var msg = new SpeechSynthesisUtterance();
+		// msg.text = theMessage;
+		// msg.lang = 'en-US';
+		// speechSynthesis.speak(msg);
 	}
 
 });
