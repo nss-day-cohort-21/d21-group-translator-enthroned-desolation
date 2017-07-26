@@ -1,0 +1,60 @@
+#wrapper {
+	font-family: Verdana, sans-serif;
+}
+
+#header {
+	border: 5px solid red;
+	border-radius: 10px;
+	text-align: center;
+	background-color: green;
+	color: white;
+	margin-bottom: 2%;
+}
+
+#flexcontainer {
+	display: flex;
+}
+
+#pickAndGo {
+	width: 30%;
+	height: 360px;
+	padding: 20px;
+	margin: 0 2% 0 0;
+	border: 5px solid red;
+	border-radius: 10px;
+	background-color: green;
+	color: white;
+
+}
+
+#textInOut {
+	width: 60%;
+	height: 360px;
+	padding: 20px;
+	margin: 0 0 0 2%;
+	border: 5px solid red;
+	border-radius: 10px;
+	background-color: green;
+	color: white;
+}
+
+#enterThePhrase {
+	/*border: 1px solid black;*/
+}
+
+#inputPhrase {
+	border: 2px solid black;
+	border-radius: 5px;
+}
+
+#translatorOutput {
+	font-size: 2em;
+}
+
+#translateBttn {
+	margin-left: 10px;
+	width: 100px;
+	height: 30px;
+	border: 2px solid black;
+	border-radius: 5px;
+}
