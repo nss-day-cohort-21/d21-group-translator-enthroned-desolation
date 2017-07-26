@@ -1,0 +1,77 @@
+#wrapper {
+	font-family: Verdana, sans-serif;
+	min-width: 480px;
+}
+
+#header {
+	display: flex;
+	justify-content: center;
+	border: 5px solid red;
+	border-radius: 10px;
+	text-align: center;
+	background-color: green;
+	color: white;
+	margin-bottom: 2%;
+}
+
+#header h2 {
+	margin-left: 0;
+	margin-right: 0;
+}
+
+#santa1 {
+	max-height: 80px;
+	margin: auto;
+	padding: 20px;
+
+}
+
+#santa2 {
+	max-height: 80px;
+	margin: auto;
+	padding: 20px;
+}
+
+#flexcontainer {
+	display: flex;
+}
+
+#pickAndGo {
+	width: 30%;
+	height: 360px;
+	padding: 5%;
+	margin: 0 2% 0 0;
+	border: 5px solid red;
+	border-radius: 10px;
+	background-color: green;
+	color: white;
+
+}
+
+#textInOut {
+	width: 60%;
+	height: 360px;
+	padding: 5%;
+	margin: 0 0 0 2%;
+	border: 5px solid red;
+	border-radius: 10px;
+	background-color: green;
+	color: white;
+}
+
+#inputPhrase {
+	border: 2px solid black;
+	border-radius: 5px;
+}
+
+#translatorOutput {
+	font-size: 1.5em;
+}
+
+#translateBttn {
+	margin-left: 10px;
+	width: 100px;
+	height: 30px;
+	border: 2px solid black;
+	border-radius: 5px;
+}

@@ -22,9 +22,9 @@ var messageConverter = (function(originalMessageConverter){
 						"roast": "Rôtir",
 						"a": "un",
 						"chestnut": "Marron",
-						" ": "<br>"
-
-
+						"is": "Est",
+						"granny": "grand-mère",
+						"spry": "alerte"
 						};
 
 
