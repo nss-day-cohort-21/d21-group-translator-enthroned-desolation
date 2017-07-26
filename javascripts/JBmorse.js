@@ -34,13 +34,7 @@ var messageConverter = (function(originalMessageConverter) {
 
     console.log("It just called the function on the morse page");
     
-	originalMessageConverter.translateToMorse = function(phrase) {
-
-    //First, you have to slice the object.
-    //Second, slice the words in order to separate all of the letters. 
-    //Third, do your conversion into morse. 
-    //Fourth jam letters back together.
-    //Fifth jam words back together as well.
+	messageConverter.translateToMorse = function(phrase) {
 
         console.log("we are slicing the phrase into words");
 
@@ -52,7 +46,9 @@ var messageConverter = (function(originalMessageConverter) {
 
         var splitMorse = [];
 
-        console.log("splitMorse", splitMorse)
+        console.log("splitMorse", splitMorse);
+
+
 
         splitInput.forEach(function(letter) {
             console.log("letter", letter);
@@ -77,7 +73,7 @@ var messageConverter = (function(originalMessageConverter) {
 
 })(messageConverter);
 
-messageConverter.translateToMorse(inputPhrase);
+
 
 //First, you have to slice the object.
 //Second, slice the words in order to separate all of the letters. 
