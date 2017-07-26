@@ -1,5 +1,9 @@
-console.log("HCfrench.js");
+// console.log("HCfrench.js");
 
+// var messageConverter = (function (originalMessageConverter) {
+	
+// 	let frenchWords = {"merry": "joyeux",
+// 						"christmas": "noel"};
 
 var messageConverter = (function(originalMessageConverter){
 
@@ -21,7 +25,7 @@ var messageConverter = (function(originalMessageConverter){
 
 						};
 
-	console.log("It just called the function on the french page");
+
 
 	messageConverter.translateToFrench = function(heresTheInput) {
 		console.log("we're going to translate to french");
