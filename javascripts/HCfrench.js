@@ -15,8 +15,16 @@ var messageConverter = (function(originalMessageConverter){
 						"a": "un",
 						"chestnut": "Marron",
 						"is": "Est",
-						"granny": "grand-mère",
-						"spry": "alerte"
+						"granny": "Grand-mère",
+						"spry": "Alerte",
+						"dashing": "Avancer",
+						"through": "Par",
+						"the": "la",
+						"snow": "Niege",
+						"santa": "Papa-Noel",
+						"coming": "Arrivée",
+						"to": "en",
+						"town": "Ville"
 						};
 
 // ********** TRANSLATOR FUNCTION ********* //
