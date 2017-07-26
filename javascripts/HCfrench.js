@@ -17,9 +17,7 @@ var messageConverter = (function(originalMessageConverter){
 						"go": "Aller",
 						"roast": "Rôtir",
 						"a": "un",
-						"chestnut": "Marron",
-
-
+						"chestnut": "Marron"
 
 						};
 
@@ -35,11 +33,11 @@ var messageConverter = (function(originalMessageConverter){
 
 
 
-		var splitChar = heresTheInput.split("");
-		console.log("splitChar", splitChar);
+		// var splitChar = heresTheInput.split("");
+		// console.log("splitChar", splitChar);
 
-		var rejoined = splitChar.join("");
-		console.log("rejoined", rejoined);
+		// var rejoined = splitChar.join("");
+		// console.log("rejoined", rejoined);
 
 		splitEnglish.forEach(function(word) {
 			console.log(word);
@@ -48,7 +46,7 @@ var messageConverter = (function(originalMessageConverter){
 			console.log(splitFrench);
 		});
 
-		outputSentence = splitFrench.join(" ");
+		var outputSentence = splitFrench.join(" ");
 		console.log(outputSentence);
 
 		// splitEnglish.forEach(translater);
