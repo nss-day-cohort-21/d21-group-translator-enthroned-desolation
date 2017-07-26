@@ -2,28 +2,41 @@
 <html>
 	<head>
 		<title>Translator</title>
-		<!-- <link rel="stylesheet" type="text/css" href="styles.css"> -->
+		<link rel="stylesheet" type="text/css" href="styles.css">
 	</head>
 	<body>
 		<div id="wrapper">
+			<header id="header"><h2>Semi-Universal Holiday Card Translator</h2></header>
 
-			<div id="enterThePhrase">
-				<label for="inputPhrase">Please enter a holiday greeting:</label><br>
-				<input type=text name="inputPhrase" id="inputPhrase">
-			</div>
-			<br>
-			<div id="languageSelector">
-					<input type="radio" name="pickLanguage" value="french" checked>French<br>
-					<input type="radio" name="pickLanguage" value="german">German<br>
-					<input type="radio" name="pickLanguage" value="morseCode">Morse Code<br>
-			</div>
-			<br>
-			<button id="translateBttn">Translate</button>
-			<br>
-			<div>
-				<p>Your translated phrase is:</p>
-				<p id="translatorOutput"></p>
-			</div>
+			<div id="flexcontainer">
+
+				<div id="pickAndGo">
+					<div id="languageSelector">
+						<input type="radio" name="pickLanguage" value="french" checked>French<br>
+						<input type="radio" name="pickLanguage" value="german">German<br>
+						<input type="radio" name="pickLanguage" value="morseCode">Morse Code<br>
+					</div>
+					<br>
+					<div id="buttonHolder">
+					<button id="translateBttn">Translate</button>
+					</div>
+
+				</div>
+
+				<div id="textInOut">
+					<div id="enterThePhrase">
+						<label for="inputPhrase">Please enter a holiday greeting:</label><br><br>
+						<textarea cols="30" lines="2" name="inputPhrase" id="inputPhrase"></textarea>
+					</div>
+
+					<div>
+						<p>Your translated phrase is:</p>
+						<p id="translatorOutput"></p>
+					</div>
+
+				</div>
+
+			</div>	
 
 		</div>
 		
