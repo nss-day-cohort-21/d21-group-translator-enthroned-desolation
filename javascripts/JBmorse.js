@@ -30,7 +30,8 @@ var messageConverter = (function(originalMessageConverter) {
         "w": ".--",
         "x": "-..-",
         "y": "-.--",
-        "z": "--..",};
+        "z": "--..",
+        " ": " "};
 
     console.log("It just called the function on the morse page");
     
@@ -48,8 +49,6 @@ var messageConverter = (function(originalMessageConverter) {
 
         console.log("splitMorse", splitMorse);
 
-
-
         splitInput.forEach(function(letter) {
             console.log("letter", letter);
             console.log("alphabet[letter]", alphabet[letter]);
@@ -58,7 +57,7 @@ var messageConverter = (function(originalMessageConverter) {
             
         });
 
-        outputMorse = splitMorse.join("");
+        outputMorse = splitMorse.join(" ");
         console.log("outputMorse", outputMorse);
 
         return outputMorse;
