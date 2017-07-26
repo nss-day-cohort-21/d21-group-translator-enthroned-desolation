@@ -1,5 +1,6 @@
 #wrapper {
 	font-family: Verdana, sans-serif;
+	min-width: 480px;
 }
 
 #header {
@@ -36,7 +37,7 @@
 #pickAndGo {
 	width: 30%;
 	height: 360px;
-	padding: 20px;
+	padding: 5%;
 	margin: 0 2% 0 0;
 	border: 5px solid red;
 	border-radius: 10px;
@@ -48,16 +49,12 @@
 #textInOut {
 	width: 60%;
 	height: 360px;
-	padding: 20px;
+	padding: 5%;
 	margin: 0 0 0 2%;
 	border: 5px solid red;
 	border-radius: 10px;
 	background-color: green;
 	color: white;
-}
-
-#enterThePhrase {
-	/*border: 1px solid black;*/
 }
 
 #inputPhrase {
@@ -66,7 +63,7 @@
 }
 
 #translatorOutput {
-	font-size: 2em;
+	font-size: 1.5em;
 }
 
 #translateBttn {
