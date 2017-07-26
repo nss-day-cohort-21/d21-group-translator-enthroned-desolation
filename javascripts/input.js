@@ -54,6 +54,7 @@ translateBttn.addEventListener("click", function(){
 		console.log("Morse - theMessage", theMessage);
 		document.getElementById("translatorOutput").innerHTML = `${theMessage}`;
 
+
 		// var msg = new SpeechSynthesisUtterance();
 		// msg.text = theMessage;
 		// msg.lang = 'en-US';
