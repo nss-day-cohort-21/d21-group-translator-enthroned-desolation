@@ -1,16 +1,8 @@
-// console.log("HCfrench.js");
-
-// var messageConverter = (function (originalMessageConverter) {
-	
-// 	let frenchWords = {"merry": "joyeux",
-// 						"christmas": "noel"};
+// ********** SET UP IIFE ********* //
 
 var messageConverter = (function(originalMessageConverter){
 
-	// Phrases: merry christmas and happy new year
-	// 		 go roast a chestnut
-	// 		 i love snow
-
+// ********** TRANSLATION LEXICON ********* //
 
 	let frenchWords = {	"merry": "Joyeux",
 						"christmas": "Noel",
@@ -27,35 +19,23 @@ var messageConverter = (function(originalMessageConverter){
 						"spry": "alerte"
 						};
 
-
+// ********** TRANSLATOR FUNCTION ********* //
 
 	messageConverter.translateToFrench = function(heresTheInput) {
-		console.log("we're going to translate to french");
-		console.log("Here's the inputPhrase from french page:", heresTheInput);
+
+// ********** DIVIDE INPUT STRING INTO WORDS, REPLACE WITH TRANSLATION, AND RECOMBINE ********* //
 
 		var splitEnglish = heresTheInput.split(" ");
-		console.log("splitEnglish", splitEnglish);
 		var splitFrench = [];
 
-
-
-		var splitChar = heresTheInput.split("");
-		console.log("splitChar", splitChar);
-
-		var rejoined = splitChar.join("");
-		console.log("rejoined", rejoined);
-
 		splitEnglish.forEach(function(word) {
-			console.log(word);
-			console.log(frenchWords[word]);
 			splitFrench.push(frenchWords[word]);
-			console.log(splitFrench);
 		});
 
 		outputSentence = splitFrench.join(" ");
-		console.log(outputSentence);
 
-		// splitEnglish.forEach(translater);
+		var outputSentence = splitFrench.join(" ");
+
 
 		return outputSentence;
 

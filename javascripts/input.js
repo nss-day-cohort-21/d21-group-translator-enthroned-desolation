@@ -1,5 +1,7 @@
 console.log("input.js");
 
+// ********** LISTEN FOR BUTTON AND CHECK LANGUAGE-SELECTOR BUTTONS ********* //
+
 let translateBttn = document.getElementById("translateBttn");
 translateBttn.addEventListener("click", function(){
 	let whichselected;
@@ -11,7 +13,7 @@ translateBttn.addEventListener("click", function(){
 		}
 	}
 
-	// let inputPhrase = "Merry Christmas and Happy New Year";
+// ********** GET INPUT TEXT FROM HTML PAGE AND CLEAN UP INPUTS ********* //	
 
 	let inputPhrase = document.getElementById("inputPhrase").value.toLowerCase();
 
@@ -22,22 +24,11 @@ translateBttn.addEventListener("click", function(){
 		inputPhrase = inputPhrase.replace(charCut, "");
 	}
 
-	console.log("inputPhrase", inputPhrase);
-
-	// inputPhrase = inputPhrase.toLowerCase();
-
-	console.log("whichselected", whichselected);	
-
-	console.log("inputPhrase.toLowerCase", inputPhrase);
-
-	console.log("messageConverter", messageConverter);
-
-	
+// ********** SEND TEXT TO TRANSLATOR BASED ON LANGUAGE, RETURN TRANSLATION, AND OUTPUT VOICE ********* //
 
 	if (whichselected === "french") {
 
 		var theMessage = messageConverter.translateToFrench(inputPhrase);
-		console.log("French - theMessage", theMessage);
 		document.getElementById("translatorOutput").innerHTML = `${theMessage}`;
 
 		var msg = new SpeechSynthesisUtterance();
@@ -45,11 +36,9 @@ translateBttn.addEventListener("click", function(){
 		msg.lang = 'fr';
 		speechSynthesis.speak(msg);
 
-
 	} else if (whichselected === "german") {
 
 		var theMessage = messageConverter.translateToGerman(inputPhrase);
-		console.log("German - theMessage", theMessage);
 		document.getElementById("translatorOutput").innerHTML = `${theMessage}`
 
 		var msg = new SpeechSynthesisUtterance();
@@ -57,23 +46,19 @@ translateBttn.addEventListener("click", function(){
 		msg.lang = 'de';
 		speechSynthesis.speak(msg);
 
-
 	} else if (whichselected === "morseCode") {
 
         var theMessage = messageConverter.translateToMorse(inputPhrase);
-        console.log("Morse - theMessage", theMessage);
         document.getElementById("translatorOutput").innerHTML = `${theMessage}`;
 
         var theNewMessage = theMessage.replace(/\./g, " dit ");
         theNewMessage = theNewMessage.replace(/-/g, " dah ");
-        console.log("not sure how this broke..", theNewMessage);
         
         var msg = new SpeechSynthesisUtterance();
         msg.voiceURI = "Google UK English Female";
         msg.text = theNewMessage;
         msg.lang = "en-GB";
         msg.rate = 1; // 0.1 to 10
-
         speechSynthesis.speak(msg);
     }
 
