@@ -51,9 +51,10 @@ translateBttn.addEventListener("click", function(){
 		
 
 		var msg = new SpeechSynthesisUtterance();
+		msg.voiceURI = "Google UK English Female";
 		msg.text = theNewMessage;
-		msg.lang = 'en-US';
-		msg.rate = .5; // 0.1 to 10
+		msg.lang = "en-GB";
+		msg.rate = 1; // 0.1 to 10
 
 		speechSynthesis.speak(msg);
 		
