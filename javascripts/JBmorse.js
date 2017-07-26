@@ -31,7 +31,7 @@ var messageConverter = (function(originalMessageConverter) {
         "x": "-..-",
         "y": "-.--",
         "z": "--..",
-        " ": " "};
+        " ": "&nbsp;&nbsp;"};
 
     console.log("It just called the function on the morse page");
     
