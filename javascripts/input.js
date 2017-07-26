@@ -29,12 +29,16 @@ translateBttn.addEventListener("click", function(){
 
 	if (whichselected === "french") {
 		var theMessage = messageConverter.translateToFrench(inputPhrase);
-		console.log("theMessage", theMessage);
+		console.log("French - theMessage", theMessage);
 		document.getElementById("translatorOutput").innerHTML = `${theMessage}`;
 	} else if (whichselected === "german") {
-		console.log("The selection was German");
+		var theMessage = messageConverter.translateToGerman(inputPhrase);
+		console.log("German - theMessage", theMessage);
+		document.getElementById("translatorOutput").innerHTML = `${theMessage}`;
 	} else if (whichselected === "morseCode") {
-		console.log("The selection was Morse Code");
+		var theMessage = messageConverter.translateToMorse(inputPhrase);
+		console.log("Morse - theMessage", theMessage);
+		document.getElementById("translatorOutput").innerHTML = `${theMessage}`;
 	}
 
 });
