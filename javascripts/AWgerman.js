@@ -4,7 +4,7 @@ console.log("AWgerman.js");
 
 
 var messageConverter = (function(msgGerman) {
-    debugger;
+    // debugger;
 
     let germanWords = {
         "merry": "fröhlich",
@@ -37,7 +37,7 @@ var messageConverter = (function(msgGerman) {
         var splitGerman = [];
         console.log("splitGerman", splitGerman);
 
-        getInput.forEach(function(bucket2) {
+        splitEnglish.forEach(function(bucket2) {
             console.log("for each started");
             splitGerman.push(germanWords[bucket2]);
             console.log("pushed");
