@@ -15,6 +15,13 @@ translateBttn.addEventListener("click", function(){
 
 	let inputPhrase = document.getElementById("inputPhrase").value.toLowerCase();
 
+	var charsToRemove = [/\*/g, /@/g, /\(/g, /\)/g, /\!/g, /,/g, /\./g, /;/g, /:/g, /\?/g, /&/g, /\$/g, /%/g];
+
+	for (var i = 0; i < charsToRemove.length; i++) {
+		charCut = charsToRemove[i];
+		inputPhrase = inputPhrase.replace(charCut, "");
+	}
+
 	console.log("inputPhrase", inputPhrase);
 
 	// inputPhrase = inputPhrase.toLowerCase();
@@ -59,13 +66,13 @@ translateBttn.addEventListener("click", function(){
         theNewMessage = theNewMessage.replace(/-/g, " dah ");
         console.log("not sure how this broke..", theNewMessage);
         
-
         var msg = new SpeechSynthesisUtterance();
+        msg.voiceURI = "Google UK English Female";
         msg.text = theNewMessage;
-        msg.lang = 'en-US';
-        msg.rate = 2; // 0.1 to 10
+        msg.lang = "en-GB";
+        msg.rate = 1; // 0.1 to 10
 
-        speechSynthesis.speak(msg);   
+        speechSynthesis.speak(msg);
     }
 
 });
