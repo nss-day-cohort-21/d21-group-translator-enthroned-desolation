@@ -1,6 +1,8 @@
 console.log("JBmorse.js");
 
-// let inputPhrase = "pink";
+
+
+// let inputPhrase = "pink"; 
 
 var messageConverter = (function(originalMessageConverter) {
 
@@ -30,8 +32,7 @@ var messageConverter = (function(originalMessageConverter) {
         "w": ".--",
         "x": "-..-",
         "y": "-.--",
-        "z": "--..",
-        " ": "&nbsp;&nbsp;"};
+        "z": "--.."};
 
     console.log("It just called the function on the morse page");
     
@@ -59,7 +60,7 @@ var messageConverter = (function(originalMessageConverter) {
 
         outputMorse = splitMorse.join(" ");
         console.log("outputMorse", outputMorse);
-
+        
         return outputMorse;
         
        	}; 
@@ -71,6 +72,8 @@ var messageConverter = (function(originalMessageConverter) {
 
 
 })(messageConverter);
+
+
 
 
 
