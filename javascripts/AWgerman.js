@@ -28,17 +28,23 @@ var messageConverter = (function(msgGerman) {
         "a": "eine",
         "an": "eine",
         "chestnut": "Kastanie",
-        "Santa": "Weihnachstmann",
-        "Santa Claus": "Weihnachstmann",
-        "Please": "Bitte",
+        "santa": "Weihnachstmann",
+        "please": "Bitte",
         "enjoy": "genießen Sie",
-        "the cookies": "die Kekse",
-        "Dear": "Liebe",
-        "mom and dad,": "Mama und Papa,",
+        "cookies": "die Kekse",
+        "dear": "Liebe",
+        "mom": "Mama",
+        "mother": "Mama",
+        "dad": "Papa",
+        "father": "Papa",
         "grandchildren": "Enkel",
         "is": "ist",
         "the": "Die",
+        "your": "Ihre",
+        "those": "Diese",
+        "these": "diese",
         "are": "sind",
+        "for": "für",
         "still": "immer noch",
         "yet": "immer",
         "terrible": "schrecklich",
@@ -47,26 +53,44 @@ var messageConverter = (function(msgGerman) {
         "am": "bin",
         "on": "im",
         "vacation": "Urlaub",
-        "so I am": "Also bin ich",
+        "so": "also bin",
         "drunk": "betrunken",
         "every": "jeden",
         "all": "ganzen",
         "day": "Tag",
         "evening": "Abend",
+        "toys": "die Spielzeug",
+        "children": "die Kindern",
+        "child": "das Kind",
+        "tree": "Tannenbaum",
+        "snowing": "Schneit",
+        "snow": "schnee",
+        "hot": "heiße",
+        "chocolate": " Schokolade",
+        "grandma": "Oma",
+        "grandpa": "Opa",
+        "reindeer": "das Rentier",
+        "his": "seine",
+        "hers": "ihres",
+        "mine": "meins",
+        "sled": "Schlitten",
+        "car": "das Auto",
+        "home": "Zuhause",
+        "church": "Kirche",
 
     };
-    console.log("spit some german");
+    // console.log("spit some german");
 
     messageConverter.translateToGerman = function(bucket) {
         var splitEnglish = bucket.split(" ");
-        console.log("splitEnglish", splitEnglish);
+        // console.log("splitEnglish", splitEnglish);
         var splitGerman = [];
-        console.log("splitGerman", splitGerman);
+        // console.log("splitGerman", splitGerman);
 
         splitEnglish.forEach(function(bucket2) {
-            console.log("for each started");
+            // console.log("for each started");
             splitGerman.push(germanWords[bucket2]);
-            console.log("pushed");
+            // console.log("pushed");
         });
 
         var outputSentence = splitGerman.join(" ");
