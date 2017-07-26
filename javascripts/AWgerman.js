@@ -1,6 +1,6 @@
 console.log("AWgerman.js");
 
-let inputPhrase = "best wishes";
+// let inputPhrase = "best wishes";
 
 
 var messageConverter = (function(msgGerman) {
@@ -49,4 +49,4 @@ var messageConverter = (function(msgGerman) {
 
     return msgGerman;
 
-})(msgConverter);
+})(messageConverter);
