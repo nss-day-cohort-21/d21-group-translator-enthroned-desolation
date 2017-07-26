@@ -21,8 +21,10 @@ var messageConverter = (function(originalMessageConverter){
 						"go": "Aller",
 						"roast": "Rôtir",
 						"a": "un",
-						"chestnut": "Marron"
-
+						"chestnut": "Marron",
+						"is": "Est",
+						"granny": "grand-mère",
+						"spry": "alerte"
 						};
 
 

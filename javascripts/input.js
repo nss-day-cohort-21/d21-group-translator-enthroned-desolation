@@ -50,15 +50,22 @@ translateBttn.addEventListener("click", function(){
 
 
 	} else if (whichselected === "morseCode") {
-		var theMessage = messageConverter.translateToMorse(inputPhrase);
-		console.log("Morse - theMessage", theMessage);
-		document.getElementById("translatorOutput").innerHTML = `${theMessage}`;
 
+        var theMessage = messageConverter.translateToMorse(inputPhrase);
+        console.log("Morse - theMessage", theMessage);
+        document.getElementById("translatorOutput").innerHTML = `${theMessage}`;
 
-		// var msg = new SpeechSynthesisUtterance();
-		// msg.text = theMessage;
-		// msg.lang = 'en-US';
-		// speechSynthesis.speak(msg);
-	}
+        var theNewMessage = theMessage.replace(/\./g, " dit ");
+        theNewMessage = theNewMessage.replace(/-/g, " dah ");
+        console.log("not sure how this broke..", theNewMessage);
+        
+
+        var msg = new SpeechSynthesisUtterance();
+        msg.text = theNewMessage;
+        msg.lang = 'en-US';
+        msg.rate = 2; // 0.1 to 10
+
+        speechSynthesis.speak(msg);   
+    }
 
 });
