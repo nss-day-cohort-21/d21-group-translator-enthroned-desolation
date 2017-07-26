@@ -49,4 +49,4 @@ var messageConverter = (function(msgGerman) {
 
     return msgGerman;
 
-})(msgConverter);
+})(messageConverter);
